@@ -22,9 +22,9 @@ function kronometroa_Eguneratu() {
 function kronometroa_Abiarazi() {
     if (interbaloa) return; // Esto evita crear un timer de más si ya hay uno funcionando.
     interbaloa = setInterval(() => {
-        denbora++;
+        denbora += 2;
         kronometroa_Eguneratu();
-    }, 1000);
+    }, 500);
 }
 
 function kronometroa_Gelditu() {
